@@ -1,0 +1,16 @@
+.no-match {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 1rem;
+  padding: 20vh 0;
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

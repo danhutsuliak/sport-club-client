@@ -1,0 +1,98 @@
+.nav-menu {
+  .btn {
+    position: absolute;
+    top: 48px;
+    right: 24px;
+    z-index: 99;
+
+    &__burger {
+      &,
+      &::before,
+      &::after {
+        width: 2.4rem;
+        height: 7px;
+        border-radius: 10px;
+        background: rgb(250, 250, 250);
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+      }
+
+      &::before {
+        transform: translateY(-17px);
+      }
+
+      &::after {
+        transform: translateY(17px);
+      }
+    }
+  }
+
+  nav {
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    transform: translateX(120vw);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    &.active {
+      transform: translateX(20vw);
+      transition: transform 0.5s;
+    }
+
+    a {
+      text-decoration: none;
+      user-select: none;
+      font-size: 2rem;
+      margin: 0 auto;
+      display: block;
+      color: white;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .btn {
+      top: 44px;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .btn {
+      display: none;
+    }
+
+    nav {
+      position: relative;
+      width: max-content;
+      height: max-content;
+      flex-direction: row;
+      background: none;
+      transform: translateX(0);
+      transition: none;
+
+      &.active {
+        transform: translateX(0);
+        transition: none;
+      }
+
+      a {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

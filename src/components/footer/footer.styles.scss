@@ -1,0 +1,36 @@
+footer {
+  background: #170c16;
+  display: table;
+  width: 100vw;
+  height: 8rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Arial", sans-serif;
+  font-size: 0.875rem;
+
+  small {
+    color: #ccc;
+    letter-spacing: 0.025rem;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.footer-nav {
+  a {
+    color: #ff9500;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    display: inline-block;
+
+    &:hover {
+      color: #ff9500;
+      transition: color 0.15s ease-in-out;
+    }
+  }
+}

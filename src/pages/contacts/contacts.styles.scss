@@ -1,0 +1,35 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+
+  h1 {
+    font-size: 32px;
+    margin: 40px auto;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-bottom: 25vh;
+
+    li {
+      font-size: 1.2rem;
+      padding-left: 0.6rem;
+
+      a {
+        text-decoration: underline;
+      }
+
+      &::marker {
+        content: "🏀";
+        font-size: 1rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    margin: 0 8%;
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #170c16;
+  padding: 15px 30px;
+
+  img {
+    height: 65px;
+    user-select: none;
+  }
+
+  @media screen and (min-width: 800px) {
+    justify-content: space-between;
+  }
+}

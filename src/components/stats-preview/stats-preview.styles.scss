@@ -1,0 +1,28 @@
+.stats-preview {
+  margin: 2.5rem 5%;
+  max-width: 1200px;
+
+  h2 {
+    margin: 20px;
+  }
+
+  .stats-wrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 24px;
+  }
+
+  @media (min-width: 800px) {
+    .stats-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin: 2.5rem auto;
+
+    .stats-wrapper {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
